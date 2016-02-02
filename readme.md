@@ -1,2 +1,2 @@
 
-![screenshot](https://github.com/hejhansson/weather_in_fbg/blob/master/screenshot.png)
+![screenshot](https://github.com/hejhansson/nodejs-weather-bot/blob/master/screenshot.png)
