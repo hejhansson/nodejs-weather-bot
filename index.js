@@ -1,7 +1,8 @@
 var request = require('request'),
     cheerio = require('cheerio'),
     chalk = require('chalk'),
-    tweet, url = "https://www.skistar.com/sv/trysil/",
+    tweet, 
+    url = "https://www.skistar.com/sv/trysil/",
     TwitterBot = require("node-twitterbot").TwitterBot,
     config = require('dotenv').config();
 
@@ -23,8 +24,8 @@ var request = require('request'),
     setInterval(function(){
       request(url, function (error, response, body) {
         if (!error) {
-    		  var $ = cheerio.load(body),
-    			TEMPERATRUE_TOP = $("p.top").clone().children().remove().end().text(),
+	  var $ = cheerio.load(body),
+    	  TEMPERATRUE_TOP = $("p.top").clone().children().remove().end().text(),
           TEMPERATRUE_VALLEY = $("p.valley").clone().children().remove().end().text(),
           SNOW_DEPTH = $('.depth p').text(),
           OPEN_SLOPES = $('.slopes p').text(),
@@ -38,7 +39,7 @@ var request = require('request'),
           console.log("Log: Sent a tweet -- " + date.toISOString(Date.now() ) );
 
       	} else {
-      		console.log("Oops! Something went wrong. Srsly sry.");
+      	  console.log("Oops! Something went wrong. Srsly sry.");
       	}
       });
 
