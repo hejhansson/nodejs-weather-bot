@@ -14,7 +14,8 @@ access_token_secret=12321321312
 Start application with
 ```
 npm start app
-``` or
+```
+or
 ```
 node index.js
 ```
