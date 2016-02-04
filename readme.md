@@ -3,7 +3,7 @@
 ```npm i```
 
 ### .env
-Create .env-file. This file contains you're Twitter-bot credentials. It should look something like this:
+Create an .env-file. This file contains you're Twitter-bot credentials. It should look something like this:
 ```
 consumer_secret=123123213213,
 consumer_key=213123123123,
